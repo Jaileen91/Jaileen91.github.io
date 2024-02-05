@@ -1,0 +1,79 @@
+div {
+ 
+    width: 200px !important;
+}
+/* selector
+   tag name
+   id
+   class name
+   decendant
+   pseudo selector 
+*/
+
+/* select element by tag name */
+
+/* div {
+    background-color: blue;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+} */
+
+/* select element by id */
+
+nav {
+    background-color: blue;
+    width: 400px !important;
+}
+
+nav, header, main, footer {
+    background-color: red;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    width: 100px;
+}        
+
+#hero-page {
+    background-color: green;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+/* select element by class name */
+.image-div {
+    background-color: blue;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+/* select element by decendant */
+#image-div + div {
+    background-color: yellow;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+#image-div + div ul {
+    list-style: none;
+    padding: 0px;
+    text-align: left;
+}
+
+#image-div + div ul li {
+    line-height: 25px;
+}
+
+#image-div + div ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#image-div + div ul li a:hover {
+    color: blue;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+button:hover {
+    font-weight: bolder; 
+    cursor: pointer;
+}
