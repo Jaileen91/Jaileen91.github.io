@@ -1,0 +1,59 @@
+/*tab name ng class inside <div> tags */
+.tab {
+    overflow: hidden; 
+    border: 1px solid #f4eef2;
+    background-color: #cf5c8a;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .tab button {
+    background-color: inherit;
+    float: right;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    color:#f4eef2;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+
+  /* add background image */
+  body{
+    background-image: url("download.jpg");
+    background-color: #cccccc;
+    background-size: cover;
+   }
+img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.name{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: 45%;
+    margin-right: 55%;
+    color:black;
+    font-size: 20px;
+}
+.name1{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: 45%;
+    margin-right: 55%;
+    color:black;
+    font-size: 20px;
+}
+  
