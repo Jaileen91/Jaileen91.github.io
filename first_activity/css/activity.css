@@ -18,6 +18,17 @@
     font-family: 'Courier New', Courier, monospace;
     font-size: 100%;
   }
+  .tab p{
+    margin-left: 3%;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color:#f4eef2;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+  }
   
   /* Change background color of buttons on hover */
   .tab button:hover {
@@ -26,6 +37,8 @@
 
   /* add background image */
   body{
+    width: 100%;
+    height: 500px;
     background-image: url("download.jpg");
     background-color: #cccccc;
     background-size: cover;
@@ -38,22 +51,33 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
+  /* first paragraph <p> class name "NAME"*/
 .name{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    margin-left: 45%;
-    margin-right: 55%;
+    width: 500px;
+    margin-left: 40%;
+    margin-right: 60%;
     color:black;
-    font-size: 20px;
+    font-size: 25px;
 }
-.name1{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    margin-left: 45%;
-    margin-right: 55%;
+/* second paragraph <p> class name "JOB"*/
+.job{
+    width: 500px;
+    margin-left: 37%;
+    margin-right: 63%;
     color:black;
-    font-size: 20px;
+    font-size: 15px;
+}
+.hire{
+    width: 500px;
+    margin-left: 42%;
+    margin-right: 58%;
+    color:black;
+    font-size: 15px;
+}
+.button1{
+    color:black;
+}
+.button2{
+    color:black;
 }
   
