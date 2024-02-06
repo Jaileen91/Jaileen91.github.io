@@ -37,7 +37,7 @@
   body{
     width: 100%;
     height: 500px;
-    background-image: url("download.jpg");
+    background-image: url("top-view-finance-business-elements.jpg");
     background-color: #cccccc;
     background-size: cover;
    }
@@ -56,6 +56,7 @@ img {
     margin-right: 60%;
     color:black;
     font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
 }
 /* second paragraph <p> class name "JOB"*/
 .job{
@@ -64,6 +65,7 @@ img {
     margin-right: 63%;
     color:black;
     font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
 }
 .hire{
     width: 500px;
@@ -73,9 +75,24 @@ img {
     font-size: 15px;
 }
 .button1{
-    color:black;
+    background-color:  #f4eef2;
+    border: 1px solid  black;
+    padding: 10px 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.button1:hover{
+    background-color: #cf5c8a;
+    color:#f4eef2;
+
 }
 .button2{
-    color:black;
+    background-color:  #f4eef2;
+    border: 1px solid  black;
+    padding: 10px 10px;
+    font-family: 'Courier New', Courier, monospace;
 }
-  
+.button2:hover{
+    background-color: #cf5c8a;
+    color:#f4eef2;
+}
+ 
