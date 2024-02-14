@@ -2,6 +2,7 @@
     overflow: hidden;
     border: 1px solid #f4eef2;
     background-color: #85c7e1;
+    width: 100%;
 }
 .tab button {
     background-color: inherit;
@@ -18,9 +19,9 @@
     background-color: #40A2E3;
   }
   body{
-    background-size:1500px 500px;
     background-image: url("bg1.avif");
     background-repeat: no-repeat;
+    background-size:100% 500px;
    }
 
   .images{
