@@ -22,6 +22,7 @@
     background-image: url("bg1.avif");
     background-repeat: no-repeat;
     background-size:100% 500px;
+    width: auto;
    }
 
   .images{
@@ -62,9 +63,9 @@
     left: 50%;
 }
 .about-image{
-  position: absolute;
-  width: 600px;
-  height: 220px;
+    position: absolute;
+    width: 600px;
+    height: 220px;
 }
 .services{
     position: absolute;
@@ -86,14 +87,75 @@
     color:#f4eef2;
     font-family: 'Courier New', Courier, monospace;
     font-size: 100%;
-  }
-  .tab1 button:hover {
+}
+.tab1 button:hover {
     background-color: #40A2E3;
 }
 .tab1-image{
-  position: absolute;
-  top:180%;
-  left: 15%;
-  width: 1000px;
-  height: 220px;
+    position: absolute;
+    top:180%;
+    left: 15%;
+    width: 1000px;
+    height: 220px;
 }
+.portfolio{
+    position: absolute;
+    background-color: inherit;
+    top: 220%;
+    left: 35%;
+    color:#7FC7D9;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+}
+.portfolio1-image{
+  position: absolute;
+  top:230%;
+  left: 8%;
+  width: 240px;
+  height: 200px;
+}
+  .portfolio2-image{
+    position: absolute;
+    top:230%;
+    left: 30%;
+    width: 240px;
+    height: 200px;
+}
+.portfolio3-image{
+    position: absolute;
+    top:230%;
+    left: 52%;
+    width: 240px;
+    height: 200px;
+
+}
+.portfolio4-image{
+  position: absolute;
+  top:230%;
+  left: 73%;
+  width: 240px;
+  height: 200px;
+  
+}
+.contact{
+    position: absolute;
+    background-color: inherit;
+    top: 270%;
+    left: 35%;
+    color:#7FC7D9;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+}
+.contact1{
+    position: absolute;
+    background-color: inherit;
+    top: 280%;
+    left: 25%;
+    cursor: pointer;
+    padding: 14px 16px;
+    color:#8d220c;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+    
