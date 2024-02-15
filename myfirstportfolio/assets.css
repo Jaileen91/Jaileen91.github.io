@@ -1,3 +1,28 @@
+.search-bar{
+  margin-top: 20%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-search-bar{
+  display:flex;
+  width: 500px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('icons.jpg');
+  background-size: 50px 50px;
+  background-position: 4px -4px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+::placeholder {
+  color: #85c7e1;
+  opacity: 1;
+  font-family: 'Courier New', Courier, monospace;
+}
 .tab{
     overflow: hidden;
     border: 1px solid #f4eef2;
@@ -87,6 +112,7 @@
     color:#f4eef2;
     font-family: 'Courier New', Courier, monospace;
     font-size: 100%;
+  
 }
 .tab1 button:hover {
     background-color: #40A2E3;
@@ -108,13 +134,13 @@
     font-size: 50px;
 }
 .portfolio1-image{
-  position: absolute;
-  top:230%;
-  left: 8%;
-  width: 240px;
-  height: 200px;
+    position: absolute;
+    top:230%;
+    left: 8%;
+    width: 240px;
+    height: 200px;
 }
-  .portfolio2-image{
+.portfolio2-image{
     position: absolute;
     top:230%;
     left: 30%;
@@ -130,12 +156,12 @@
 
 }
 .portfolio4-image{
-  position: absolute;
-  top:230%;
-  left: 73%;
-  width: 240px;
-  height: 200px;
-  
+    position: absolute;
+    top:230%;
+    left: 73%;
+    width: 240px;
+    height: 200px;
+    
 }
 .contact{
     position: absolute;
@@ -148,14 +174,19 @@
 }
 .contact1{
     position: absolute;
-    background-color: inherit;
-    top: 280%;
-    left: 25%;
-    cursor: pointer;
-    padding: 14px 16px;
+    top: 275%;
+    left: 35%;
+    padding: 80px 16px;
     color:#8d220c;
     font-family: 'Courier New', Courier, monospace;
-
 }
-
+.footer{
+  position:fixed;
+  left: 0;
+  bottom: 0%;
+  width: 100%;
+  background-color: #40A2E3;
+  color: white;
+  text-align: center;
+}
     
