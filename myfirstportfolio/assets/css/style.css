@@ -26,17 +26,12 @@
   opacity: 1;
   font-family: 'Courier New', Courier, monospace;
 }
-.navbar-section{
-  width: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .navbar{
-    overflow: hidden;
+    position:fixed;
     border: 1px solid #f4eef2;
     background-color: #85c7e1;
     width: 100%;
+    display: block;
 }
 .navbar button {
     background-color: inherit;
@@ -143,8 +138,145 @@
     font-size: 100%;
   
 }
-.tab1 button:hover {
-    background-color: #40A2E3;
+.fligth{
+  padding: 15px 32px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.fligth-div {
+  position: relative;
+  display: inline-block;
+}
+
+.fligth-div-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.fligth-div-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.fligth-div-content a:hover {background-color: #7FC7D9}
+
+.fligth-div:hover .fligth-div-content {
+  display: block;
+}
+
+.fligth-div:hover .fligth {
+  background-color: #40A2E3;
+}
+.travel-info{
+  padding: 15px 32px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.travel-info-div {
+  position: relative;
+  display: inline-block;
+  margin-left: 50px;
+}
+.travel-info-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.travel-info-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.travel-info-content a:hover {background-color: #7FC7D9}
+
+.travel-info-div:hover .travel-info-content {
+  display: block;
+}
+
+.travel-info-div:hover .travel-info {
+  background-color: #40A2E3;
+}
+.car-rent{
+  padding: 15px 32px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.car-rent-div {
+  position: relative;
+  display: inline-block;
+  margin-left: 50px;
+}
+.car-rent-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.car-rent-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.car-rent-content a:hover {
+  background-color: #7FC7D9;
+}
+
+.car-rent-div:hover .car-rent-content {
+  display: block;
+}
+
+.car-rent-div:hover .car-rent {
+  background-color: #40A2E3;
+}
+.hotels{
+  padding: 15px 32px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.hotels-div {
+  position: relative;
+  display: inline-block;
+  margin-left: 50px;
+}
+.hotels-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.hotels-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.hotels-content a:hover {
+  background-color: #7FC7D9;
+}
+
+.hotels-div:hover .hotels-content {
+  display: block;
+}
+
+.hotels-div:hover .hotels {
+  background-color: #40A2E3;
 }
 .travel-section{
   width: auto;
@@ -194,6 +326,32 @@
     width: 240px;
     height: 200px;    
 }
+.portfolio-img-section2{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio5-image{
+    width: 240px;
+    height: 200px;
+}
+.portfolio6-image{
+    margin-left: 10px;
+    width: 240px;
+    height: 200px;
+}
+.portfolio7-image{
+    margin-left: 10px;
+    width: 240px;
+    height: 200px;
+
+}
+.portfolio8-image{
+    margin-left: 10px;
+    width: 240px;
+    height: 200px;    
+}
 .contact-section{
   width: auto;
   display: flex;
@@ -214,9 +372,15 @@
 }
 .contact1{
     padding-top: 10px;
-    padding-bottom: 180px;
-    color:#8d220c;
+    padding-bottom: 50px;
+    color: #40A2E3;
     font-family: 'Courier New', Courier, monospace;
+}
+.call-us{
+  font-family: 'Courier New', Courier, monospace;
+}
+.location{
+  font-family: 'Courier New', Courier, monospace;
 }
 .footer{
   position:fixed;
@@ -226,5 +390,150 @@
   background-color: #40A2E3;
   color: white;
   text-align: center;
+}
+.mayon-div {
+  display: inline-block;
+}
+
+.mayon-content {
+  display: none;
+  min-width: 160px;
+}
+
+.mayon-div:hover .mayon-content {
+  display: block;
+}
+
+.mayon-desc {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+.siargao-div {
+  display: inline-block;
+}
+
+.siargao-content {
+  display: none;
+  min-width: 160px;
+}
+
+.siargao-div:hover .siargao-content {
+  display: block;
+}
+
+.siargao-desc {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+.ilocos-div {
+  display: inline-block;
+}
+
+.ilocos-content {
+  display: none;
+  min-width: 160px;
+}
+
+.ilocos-div:hover .ilocos-content {
+  display: block;
+}
+
+.ilocos-desc {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+.laguna-div {
+  display: inline-block;
+}
+
+.laguna-content {
+  display: none;
+  min-width: 160px;
+}
+
+.laguna-div:hover .laguna-content {
+  display: block;
+}
+
+.laguna-desc {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.bohol-div {
+  display: inline-block;
+}
+
+.bohol-content {
+  display: none;
+  min-width: 160px;
+}
+
+.bohol-div:hover .bohol-content {
+  display: block;
+}
+
+.bohol-desc {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+.palawan-div {
+  display: inline-block;
+}
+
+.palawan-content {
+  display: none;
+  min-width: 160px;
+}
+
+.palawan-div:hover .palawan-content {
+  display: block;
+}
+
+.palawan-desc {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+.banaue-div {
+  display: inline-block;
+}
+
+.banaue-content {
+  display: none;
+  min-width: 160px;
+}
+
+.banaue-div:hover .banaue-content {
+  display: block;
+}
+
+.banaue-desc {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+.aurora-div {
+  display: inline-block;
+}
+
+.aurora-content {
+  display: none;
+  min-width: 160px;
+}
+
+.aurora-div:hover .aurora-content {
+  display: block;
+}
+
+.aurora-desc {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
 }
     
