@@ -33,6 +33,14 @@
     width: 100%;
     display: block;
 }
+.img-logo{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-top: 8px;
+}
 .navbar button {
     background-color: inherit;
     float: right;
@@ -408,6 +416,7 @@
   padding: 15px;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
+  background-color: #85c7e1;
 }
 .siargao-div {
   display: inline-block;
@@ -426,6 +435,7 @@
   padding: 15px;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
+  background-color: #85c7e1;
 }
 .ilocos-div {
   display: inline-block;
@@ -444,6 +454,7 @@
   padding: 15px;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
+  background-color: #85c7e1;
 }
 .laguna-div {
   display: inline-block;
@@ -462,6 +473,7 @@
   padding: 15px;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
+  background-color: #85c7e1;
 }
 
 .bohol-div {
@@ -481,6 +493,7 @@
   padding: 15px;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
+  background-color: #85c7e1;
 }
 .palawan-div {
   display: inline-block;
@@ -499,6 +512,7 @@
   padding: 15px;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
+  background-color: #85c7e1;
 }
 .banaue-div {
   display: inline-block;
@@ -517,6 +531,7 @@
   padding: 15px;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
+  background-color: #85c7e1;
 }
 .aurora-div {
   display: inline-block;
@@ -535,5 +550,6 @@
   padding: 15px;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
+  background-color: #85c7e1;
 }
     
