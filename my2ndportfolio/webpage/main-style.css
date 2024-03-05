@@ -11,6 +11,10 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  background-image: url("top-view-finance-business-elements.jpg");
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  width: auto;
 }
 
 a {
