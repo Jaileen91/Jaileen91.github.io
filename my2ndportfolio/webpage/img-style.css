@@ -2,17 +2,17 @@
     max-width: 100%;
     height: 60%;
     width: 80%;
-}
-.test{
+  }
+  .test{
   background-image: url("portfolio-img.png");
   background-repeat: no-repeat;
   width: 500px;
   height: 200px;
   background-size: 500px 200px;
- 
-}
-.div-size{
+  
+  }
+  .div-size{
     justify-content: center;
     display: flex;
     align-items: center;
-}
+  }
