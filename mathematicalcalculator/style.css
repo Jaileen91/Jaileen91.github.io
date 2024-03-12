@@ -1,0 +1,25 @@
+.calculator-table{
+  margin: auto;
+  margin-top: 10%;
+  width: 50%;
+  border: 1px solid;
+  padding: 10px;
+  background-color: rgba(10, 9, 9, 0.861);
+}
+.math{
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;  
+}
+
+.firstNum{
+font-family: 'Courier New', Courier, monospace;
+color: aliceblue;
+}
+.secondNum{
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+}
+.total{
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+}
