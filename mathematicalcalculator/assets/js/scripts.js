@@ -38,3 +38,15 @@ function addition() {
     console.log("total : "+ quo);
     document.getElementById("totalTxt").value = parseInt(quo);
   }
+  function operation(test) {
+    if(test=="addition"){
+    let firstNumber = document.getElementById("firstNumTxt").value;
+    let secondNumber =  document.getElementById("secondNumTxt").value;
+    console.log("first number: "+ firstNumber);
+    console.log("second number: "+ secondNumber);
+
+    let sum = parseInt(firstNumber) + parseInt(secondNumber);
+    console.log("total : "+ sum);
+    document.getElementById("totalTxt").value = parseInt(sum);
+    }
+  }
