@@ -5,7 +5,7 @@ document.getElementById("btn-log").addEventListener('click', function() {
     let WorkingHours = document.getElementById("txtWorkingHours").value;
     console.log("Employee ID: " +EmployeeID + " Employee Name: "+ EmployeeName + " Working Hours: "+ WorkingHours);
 
-    if(EmployeeID=="" && EmployeeName=="" && WorkingHours ==""){
+    if(EmployeeID=="" || EmployeeName=="" || WorkingHours ==""){
         alert("Employeed ID and Employee Name and Working Hours are required fields");
 
     }else{
