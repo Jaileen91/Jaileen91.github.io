@@ -58,7 +58,7 @@ function DrawTable() {
     let total =quality * parseInt(Products[x].itemPrice);
     TableBody += "<tr>";
     TableBody += "<td>" + Products[x].empIndex + "</td>";
-    TableBody += "<td>" + Products[x].itemPhoto + "</td>";
+    TableBody += "<td>" + "<img src='"+Products[x].itemPhoto+"' width='50' height='50'>" +"</td>";
     TableBody += "<td>" + Products[x].skuNum + "</td>";
     TableBody += "<td>" + Products[x].itemName + "</td>";
     TableBody += "<td>" + Products[x].itemPrice + "</td>";
@@ -95,7 +95,7 @@ function DrawTable1() {
       TableBody1 +=`<td>
       <button class='btn btn-success btn-sm' onclick='cart(` +
         x +
-        `);'>Cart</button>
+        `);'>Add to Cart</button>
                   <button class='btn btn-warning btn-sm' onclick='edit(` +
         x +
         `);'>Modify</button>
@@ -116,7 +116,7 @@ function minus(quality, x) {
     let total =quality * parseInt(Products[x].itemPrice);
     TableBody += "<tr>";
     TableBody += "<td>" + Products[x].empIndex + "</td>";
-    TableBody += "<td>" + Products[x].itemPhoto + "</td>";
+    TableBody += "<td>" + "<img src='"+Products[x].itemPhoto+"' width='50' height='50'>" +"</td>";
     TableBody += "<td>" + Products[x].skuNum + "</td>";
     TableBody += "<td>" + Products[x].itemName + "</td>";
     TableBody += "<td>" + Products[x].itemPrice + "</td>";
@@ -145,7 +145,7 @@ function plus(quality, x) {
     console.log("quality: "+ quality+"total: "+ total);
     TableBody += "<tr>";
     TableBody += "<td>" + Products[x].empIndex + "</td>";
-    TableBody += "<td>" + Products[x].itemPhoto + "</td>";
+    TableBody += "<td>" + "<img src='"+Products[x].itemPhoto+"' width='50' height='50'>" +"</td>";
     TableBody += "<td>" + Products[x].skuNum + "</td>";
     TableBody += "<td>" + Products[x].itemName + "</td>";
     TableBody += "<td>" + Products[x].itemPrice + "</td>";
