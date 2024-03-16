@@ -169,7 +169,30 @@ function remove1(index) {
   }
 
 function cart(index) {
-  DrawTable();
+    let TableBody = "<tr>";
+    for (let x = 0; x < Products.length; x++) {
+      let quality =1;
+      let total =quality * parseInt(Products[x].itemPrice);
+      TableBody += "<tr>";
+      TableBody += "<td>" + Products[x].empIndex + "</td>";
+      TableBody += "<td>" + "<img src='"+Products[x].itemPhoto+"' width='50' height='50'>" +"</td>";
+      TableBody += "<td>" + Products[x].skuNum + "</td>";
+      TableBody += "<td>" + Products[x].itemName + "</td>";
+      TableBody += "<td>" + Products[x].itemPrice + "</td>";
+      TableBody += "<td>" + quality+ "</td>";
+      TableBody += "<td>" + total+  "</td>";
+      TableBody +=`<td>
+                  <button class='btn btn-danger btn-sm' onclick='minus(` +
+       quality+','+x +
+        `);'>Minus</button>
+                  <button class='btn btn-warning btn-sm' onclick='plus(` +
+                  quality+','+x +
+        `);'>Plus</button>
+              </td>`;
+      TableBody += "</tr>";
+    }
+  
+    document.getElementById("tableBody").innerHTML = TableBody;
   }
   
 
