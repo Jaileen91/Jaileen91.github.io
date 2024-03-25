@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Bhen Morales",
+        "age": 25,
+        "year": "4th year",
+        "section": "B",
+        "photo": "assets/images/bhen.jpg"
+    },
+    {
+        "name": "Emmanuel San Juan",
+        "age": 30,
+        "year": "1st year",
+        "section": "B",
+        "photo": "assets/images/emman.jpg"
+    },
+    {
+        "name": "Jeff Canlas",
+        "age": 18,
+        "year": "2nd year",
+        "section": "B",
+        "photo": "assets/images/jeff.jpg"
+    },
+    {
+        "name": "John Michael Dela Cruz",
+        "age": 28,
+        "year": "3rd year",
+        "section": "B",
+        "photo": "assets/images/john.jpg"
+    },
+    {
+        "name": "Jesthony Morales",
+        "age": 28,
+        "year": "3rd year",
+        "section": "B",
+        "photo": "assets/images/john.jpg"
+    }
+]

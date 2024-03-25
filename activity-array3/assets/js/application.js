@@ -1,4 +1,5 @@
 let Products = [];
+let Products1 = [];
 
 document.getElementById("btnLog").addEventListener("click", function () {
   let EmpIndex = document.getElementById("txtIndex").value;
@@ -28,7 +29,15 @@ document.getElementById("btnLog").addEventListener("click", function () {
       itemPhoto: ItemPhoto,
       itemPrice: ItemPrice,
     };
+    let ObjEmp1 = {
+        empIndex:EmpIndex,
+        skuNum: SkuNum,
+        itemName: ItemName,
+        itemPhoto: ItemPhoto,
+        itemPrice: ItemPrice,
+      };
     Products.push(ObjEmp);
+    Products1.push(ObjEmp);
   } else {
     let ObjEmp = {
       empIndex:EmpIndex,
@@ -37,7 +46,9 @@ document.getElementById("btnLog").addEventListener("click", function () {
       itemPhoto: ItemPhoto,
       itemPrice: ItemPrice,
     };
+
     Products[EmpIndex] = ObjEmp;
+    Products1[EmpIndex] = ObjEmp1;
   }
 
   document.getElementById("txtIndex").value = "";
@@ -53,15 +64,15 @@ document.getElementById("btnLog").addEventListener("click", function () {
 
 function DrawTable() {
   let TableBody = "<tr>";
-  for (let x = 0; x < Products.length; x++) {
+  for (let x = 0; x < Products1.length; x++) {
     let quality =1;
-    let total =quality * parseInt(Products[x].itemPrice);
+    let total =quality * parseInt(Products1[x].itemPrice);
     TableBody += "<tr>";
-    TableBody += "<td>" + Products[x].empIndex + "</td>";
-    TableBody += "<td>" + "<img src='"+Products[x].itemPhoto+"' width='50' height='50'>" +"</td>";
-    TableBody += "<td>" + Products[x].skuNum + "</td>";
-    TableBody += "<td>" + Products[x].itemName + "</td>";
-    TableBody += "<td>" + Products[x].itemPrice + "</td>";
+    TableBody += "<td>" + Products1[x].empIndex + "</td>";
+    TableBody += "<td>" + "<img src='"+Products1[x].itemPhoto+"' width='50' height='50'>" +"</td>";
+    TableBody += "<td>" + Products1[x].skuNum + "</td>";
+    TableBody += "<td>" + Products1[x].itemName + "</td>";
+    TableBody += "<td>" + Products1[x].itemPrice + "</td>";
     TableBody += "<td>" + quality+ "</td>";
     TableBody += "<td>" + total+  "</td>";
     TableBody +=`<td>
@@ -113,13 +124,13 @@ function minus(quality, x) {
     quality = quality-1;
     if(quality!=0){
     let TableBody = "<tr>";
-    let total =quality * parseInt(Products[x].itemPrice);
+    let total =quality * parseInt(Products1[x].itemPrice);
     TableBody += "<tr>";
-    TableBody += "<td>" + Products[x].empIndex + "</td>";
-    TableBody += "<td>" + "<img src='"+Products[x].itemPhoto+"' width='50' height='50'>" +"</td>";
-    TableBody += "<td>" + Products[x].skuNum + "</td>";
-    TableBody += "<td>" + Products[x].itemName + "</td>";
-    TableBody += "<td>" + Products[x].itemPrice + "</td>";
+    TableBody += "<td>" + Products1[x].empIndex + "</td>";
+    TableBody += "<td>" + "<img src='"+Products1[x].itemPhoto+"' width='50' height='50'>" +"</td>";
+    TableBody += "<td>" + Products1[x].skuNum + "</td>";
+    TableBody += "<td>" + Products1[x].itemName + "</td>";
+    TableBody += "<td>" + Products1[x].itemPrice + "</td>";
     TableBody += "<td>" + quality+ "</td>";
     TableBody += "<td>" + total+  "</td>";
     TableBody +=`<td>
@@ -132,7 +143,7 @@ function minus(quality, x) {
     TableBody += "</tr>";
   document.getElementById("tableBody").innerHTML = TableBody;
 }else{
-    Products.splice(x, 1);
+    Products1.splice(x, 1);
     DrawTable();
 }
 }
@@ -141,14 +152,14 @@ function plus(quality, x) {
     
     let TableBody = "<tr>";
     quality=quality+1;
-    let total =quality * parseInt(Products[x].itemPrice);
+    let total =quality * parseInt(Products1[x].itemPrice);
     console.log("quality: "+ quality+"total: "+ total);
     TableBody += "<tr>";
-    TableBody += "<td>" + Products[x].empIndex + "</td>";
-    TableBody += "<td>" + "<img src='"+Products[x].itemPhoto+"' width='50' height='50'>" +"</td>";
-    TableBody += "<td>" + Products[x].skuNum + "</td>";
-    TableBody += "<td>" + Products[x].itemName + "</td>";
-    TableBody += "<td>" + Products[x].itemPrice + "</td>";
+    TableBody += "<td>" + Products1[x].empIndex + "</td>";
+    TableBody += "<td>" + "<img src='"+Products1[x].itemPhoto+"' width='50' height='50'>" +"</td>";
+    TableBody += "<td>" + Products1[x].skuNum + "</td>";
+    TableBody += "<td>" + Products1[x].itemName + "</td>";
+    TableBody += "<td>" + Products1[x].itemPrice + "</td>";
     TableBody += "<td>" + quality+ "</td>";
     TableBody += "<td>" + total+  "</td>";
     TableBody +=`<td>
@@ -164,6 +175,7 @@ function plus(quality, x) {
 
 function remove1(index) {
     Products.splice(index, 1);
+    Products1.splice(index, 1);
     DrawTable();
     DrawTable1();
   }
@@ -172,7 +184,7 @@ function cart(index) {
     let TableBody = "<tr>";
     for (let x = 0; x < Products.length; x++) {
       let quality =1;
-      let total =quality * parseInt(Products[x].itemPrice);
+      let total =quality * parseInt(Products1[x].itemPrice);
       TableBody += "<tr>";
       TableBody += "<td>" + Products[x].empIndex + "</td>";
       TableBody += "<td>" + "<img src='"+Products[x].itemPhoto+"' width='50' height='50'>" +"</td>";
