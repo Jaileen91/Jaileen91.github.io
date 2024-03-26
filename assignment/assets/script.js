@@ -1,8 +1,16 @@
-let min = parseInt(prompt("enter a number:"));
-let max = parseInt(prompt("enter a number:"));
+let min = parseInt(prompt("enter a minimum:"));
+let max = parseInt(prompt("enter a maximum:"));
 
-function displayEvenNumber(maxlimit){
-    for (let i = o; i <= maxlimit; i += 2){
-        console.log(i);
-    }
+mySelf(min, max);
+
+function mySelf(min, max) {
+    if (min > max)
+        return;
+
+    if (min % 2 == 0)
+        console.log(min);
+
+    min++;
+    mySelf(min, max);
+
 }
