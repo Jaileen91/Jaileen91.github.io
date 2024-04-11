@@ -1,0 +1,7 @@
+{
+    "options": [
+      {"value": "Standard", "label": "Standard"},
+      {"value": "Executive", "label": "Executive"},
+      {"value": "Family Room", "label": "Family Room"}
+    ]
+  }
