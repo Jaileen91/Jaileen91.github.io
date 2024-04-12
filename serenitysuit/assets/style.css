@@ -9,9 +9,28 @@
   }
   
   .navbar a:hover {
-    background-color: #72d1e6;
+    background-color: #585b5c;
+    width: 100%;
   }
   
+  .navbar-nav .nav-item {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0 15px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+  
+  .navbar-brand {
+    margin-right: auto;
+  }
+
+
   @media screen and (max-width: 500px) {
     .navbar a {
       float: none;
@@ -220,6 +239,11 @@
   align-items: center;
   width: 300px;
   height: 270px;
+}
+.navbar-logo{
+  width: 100px;
+  height: 55px;
+  margin-left: 0%;
 }
 
 .sectionroom{

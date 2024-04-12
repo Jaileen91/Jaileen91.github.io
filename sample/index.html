@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with Background Image</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#"><img src="logo.png" alt="Logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Bookings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <body>
+        <section class= "section1">
+            <div>
+                <p class="inspireDay">Your Comfort Zone!</p>
+            </div>
+            <div id="message" class="message"></div>
+            <div class="covertd">
+                <table class="table1">
+                    <tr>
+                        <td><p>CHECK-IN</p></td> |
+                        <td><p>ROOM</p></td>|
+                        <td><p>PHONE</p></td>
+                        <td rowspan=2 class="tdbtn"><button id="rqstbtn" class="rqstbtn">REQUEST QUOTE</button></td>
+                    </tr>
+                    <tr>
+                        <td class="dateInput">
+                            <input type="date" id="date" name="" placeholder="">
+                        </td>
+                        <td class="selectInput">
+                            <select id="selectOptions" >
+                          </select>
+                        </td>
+                        <td class="phoneInput">
+                            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="+63">
+                        </td>
+                    </tr>
+                </table>
+    </body>
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
