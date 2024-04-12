@@ -46,9 +46,9 @@
     justify-content: center;
   }   
   .inspireDay{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Lora";
     font-size: 85px;
-    color: #C4E4FF;
+    color: white;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -64,13 +64,6 @@
     font-weight: bold;
     padding-top: 100px;
   }
- td {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    align-items: center;
-    padding: 25px;
-  
-  }
   .dateInput{
     padding-top: 0%;
     
@@ -81,13 +74,55 @@
   .phoneInput{
     padding-top: 0%;
   }
+  ::placeholder {
+    color: white;
+  }
+  #phoneNumber{
+    width: 200px;
+    background: transparent;
+    border: 3px solid white;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 16px;
+    font-family: "Lora";
+  }
+  #date{
+    width: 200px;
+    background: transparent;
+    border: 3px solid white;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 16px;
+    font-family: "Lora";
+  }
+  #selectOptions{
+    width: 200px;
+    background: transparent;
+    border: 3px solid white;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 16px;
+    font-family: "Lora";
+  }
 
   .table1{
-    background-color: rgb(178, 208, 237);
     display: flex;
     justify-content: center;
     align-items: center;
-
+    border: 3px white dashed; 
+  }
+  .table1 td {
+    align-items: center;
+    width: 200px;
+    padding-left: 10px;
+  }
+  .table1 td p{
+    font-family: "Lora";
+    font-size: 25px;
+    align-items: center;
+    color: azure;
+    font-weight: bold;
+    
   }
   .covertd{
     display: flex;
@@ -97,12 +132,16 @@
 
   }
   .rqstbtn{
-    align-content: center;
-    justify-content: center;
     border: none;
-    height: 100px;
-    padding-top: 0%;
+    height: 70px;
+    font-family: "Lora";
+    margin-left: 20px;
   }
+  /* .tdbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
   .service{
     margin-top: 20px;
     width: auto;
@@ -117,18 +156,47 @@
       font-size: 50px;
     }
   .column1 {
-    width: 500px;
-    margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   }
   .column2 {
-    width: 500px;
-    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .column3 {
-    width: 500px;
-    margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
+
+.section5{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.table2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: black;
+  /* border: 1px solid; */
+}
+.table2 td{
+  border-color: black;
+  /* border: 1px solid;
+   */
+}
+.table2 td p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 .newbed{
   display:inline-block;
   width: auto;
@@ -150,9 +218,8 @@
   width: auto;
   justify-content: center;
   align-items: center;
-  width: 250px;
-  height: 250px;
-  padding-top:0%;
+  width: 300px;
+  height: 270px;
 }
 
 .sectionroom{
@@ -173,6 +240,7 @@
   width: auto;
   display: flex;
   justify-content: center;
+  align-items: center ;
   font-size: 80px;
 }
 
@@ -184,19 +252,20 @@
 .standard {
   width: 500px;
   margin-left: 100px;
-  margin-top: 200px;
+  margin-top: 70px;
+
 
 }
 .executive {
   width: 500px;
   margin-left: 100px;
-  margin-top: 200px;
+  margin-top: 70px;
 
 }
 .family {
   width: 500px;
   margin-left: 100px;
-  margin-top: 200px;
+  margin-top: 70px;
 }
 .stan-room{
   display:inline-block;
@@ -211,8 +280,8 @@
   width: auto;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
 }
 .fam-room{
   display:inline-block;
@@ -223,6 +292,42 @@
   height: 250px;
   padding-top:0%;
 }
+
+.sectionreview{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  margin-top: 50px;
+  background-image: url("reviews.jpg");
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  height: 800px;
+  
+}
+.bst{
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.sectionamenities{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+.sectionamenities1{
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
 
   /* #footer .credits {
     padding-top: 5px;
