@@ -73,3 +73,41 @@
       addClient(newClientData);
     });
   });
+
+const slideImages = document.querySelectorAll('.slide-image');
+const imageContainer = document.querySelector('.image-container');
+
+let currentPosition = 0;
+const slideWidth = slideImages[0].clientWidth;
+
+function slideToLeft() {
+  currentPosition -= slideWidth;
+  imageContainer.style.transition = 'transform 10s linear';
+  imageContainer.style.transform = `translateX(${currentPosition}px)`;
+
+  if (currentPosition < -slideWidth * (slideImages.length - 1)) {
+    setTimeout(() => {
+      currentPosition = 0;
+      imageContainer.style.transition = 'none';
+      imageContainer.style.transform = `translateX(${currentPosition}px)`;
+    }, 10000);
+  }
+}
+
+function slideToRight() {
+  currentPosition += slideWidth;
+  imageContainer.style.transition = 'transform 10s linear';
+  imageContainer.style.transform = `translateX(${currentPosition}px)`;
+
+  // Reset position to the beginning when the first image is reached
+  if (currentPosition > 0) {
+    setTimeout(() => {
+      currentPosition = -slideWidth * (slideImages.length - 1);
+      imageContainer.style.transition = 'none'; // Remove transition for instant reset
+      imageContainer.style.transform = `translateX(${currentPosition}px)`;
+    }, 10000); // Wait for the animation to complete before resetting
+  }
+}
+
+// Start sliding automatically
+setInterval(slideToLeft, 10000); // Adjust timing as needed

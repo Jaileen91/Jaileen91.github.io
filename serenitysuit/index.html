@@ -21,9 +21,9 @@
                <nav id="navbar" class="navbar order-last order-lg-0">
                    <ul>
                      <li><a href="">Home</a></li>
-                     <li><a href="">Services</a></li>
-                     <li><a href="">Booking</a></li>
-                     <li><a href="">Contact</a></li>
+                     <li><a href="#services-section">Services</a></li>
+                     <li><a href="#booking-section">Booking</a></li>
+                     <li><a href="#contact-section">Contact</a></li>
                    </ul>
                      <i class="bi bi-list mobile-nav-toggle"></i>
                  </nav>
@@ -39,8 +39,8 @@
         <section class= "section1">
             <div>
                 <p class="inspireDay">Your Comfort Zone!</p>
+                <p id="message" class="message"></p>
             </div>
-            <div id="message" class="message"></div>
             <div class="covertd">
                 <table class="table1">
                     <tr>
@@ -64,8 +64,7 @@
                 </table>
             </div>  
         </section>
-        <section class= "section2">
-            <div class="service">
+        <section class= "section2" id="services-section">
                 <p>❃ SERVICES</p>
             </div>
         </section>
@@ -130,13 +129,15 @@
               <img src="assets/family.jpg" class="fam-room">
               <p>Family Room</p>
             </div>
-        </section>  
-            <section class= "sectionreview">
-                <div class="review">
+        </section> 
+        <section class= "reviews">
+            <div>
                 <p>❃ REVIEWS</p>      
+            </div>
+            </section> 
+            <section class= "sectionreview">
+                <div class="review"> 
                 <p class="bst">Best Moments</p>
-
-            <!-- ADD REVIEWS- DO COPY THE REVIEWS IN REF. WEBSITE / CENTER THE {❃ REVIEWS} -->
             </div>
             </section>
             <section class= "sectionamenities">
@@ -146,31 +147,47 @@
             </section>
              <section class= "sectionamenities1">
                 <div class="amenities1">
-                    <p>Discover Tranquility</p>
+                    <div class="discoverTran">
+                        <p>Discover Tranquility</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="assets/1.jpg" class="slide-image">
+                        <img src="assets/03.jpg" class="slide-image">
+                        <img src="assets/05.jpg" class="slide-image">
+                        <img src="assets/4.jpg" class="slide-image">
+                        <img src="assets/2.jpg" class="slide-image">
+                      </div>
                 </div>
-                <!-- ADD IMAGES WITH CAROUSEL DESIGN TO DO!!! 
-                ALREADY SAVE IN DESKTOP!--> 
             </section>
-            <section class= "sectionevent">
-                <div class="event">
+            <section class="eventDisplay">
+                <div>
                     <p>❃ EVENTS</p>
                 </div>
             </section>
-             <section class= "sectionevent1">
-                <div class="event1">
-                    <p>Latest Events</p>
-            
-                    <div class="container">
-                    <div class="row">
+            <section class= "sectionevent">
+                <div class="container">
+                    <div class="latestEvents">
+                        <p>Latest Events</p>
                     </div>
-                  </div>
-                </div>
+                    <div class="event1">
+                        <img src="assets/26.jpg" alt="Conference">
+                        <p>Conference room provided a singlar events such as education, trainings and presentation.</p>
+                    </div>
+                    <div  class="event2">
+                        <img src="assets/25.jpg" alt="Description of the image">
+                        <p>Meeting room can be used for conducting discussions, meeting, collaborative sessions.</p>
+                    </div>
+                     <div  class="event3">
+                        <img src="assets/23.jpg" alt="Description of the image">
+                        <p>Seminar room can be used as scheduled work space or discussions.</p>
+                    </div>
+                 </div>
             </section>
-            <section class= "sectionbooknow">
+            <section class= "sectionbooknow"id="booking-section">
                 <div class="bookNow">
                     <p>Book Now</p>
                 </div>
-                <div class="col-lg-8 mt-5 mt-lg-0">
+                <div id="bookForm">
                     <form action="" method="post" role="form" class="php-email-form">
                       <div class="row">
                         <div class="col-md-6 form-group">
@@ -192,10 +209,62 @@
                 </div>
               </div>
             </section>
+            <section class="contact" id="contact-section">
+                <div class="container aos-init aos-animate" data-aos="fade-up">
+          
+                  <div class="section-title">
+                  <div class="row mt-5">
+                    <div class="col-lg-4">
+                      <div class="info">
+                        <div class="address">
+                          <i class="bi bi-geo-alt"></i>
+                          <h4>Location:</h4>
+                          <p>San Jose del Monte Bulacan</p>
+                        </div>
+          
+                        <div class="email">
+                          <i class="bi bi-envelope"></i>
+                          <h4>Email:</h4>
+                          <p>jaileencruz1995@gmal.com<p>
+                        </div>
+                        <div class="phone">
+                          <i class="bi bi-phone"></i>
+                          <h4>Call:</h4>
+                          <p> +639-1234-5678</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-8 mt-5 mt-lg-0">
+                      <form action="" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                          <div class="col-md-6 form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                          </div>
+                          <div class="col-md-6 form-group mt-3 mt-md-0">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                          </div>
+                        </div>
+                        <div class="form-group mt-3">
+                          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
+                        </div>
+                        <div class="form-group mt-3">
+                          <textarea class="form-control" name="message" rows="5" placeholder="Message" required=""></textarea>
+                        </div>
+                        <div class="my-3">
+                          <div class="loading">Loading</div>
+                          <div class="error-message"></div>
+                          <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="text-center"><button type="submit">Send Message</button></div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </section>
             <footer id="footer">
                 <div class="container">
                     <div class="copyright">
-                        © Copyright <strong><span>Serenity</span></strong>. All Rights Reserved
+                        © Copyright <strong><span>SerenitySuite</span></strong>. All Rights Reserved
                     </div>
                 </div>
             </footer>
