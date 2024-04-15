@@ -782,5 +782,34 @@
       transform: rotate(360deg);
     }
   }
+  section {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    section {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 900px) {
+    section {
+        text-align: left;
+        padding: 15px;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 901px) {
+    section {
+        text-align: left;
+        padding: 20px;
+    }
+}
   
   
