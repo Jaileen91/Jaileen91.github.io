@@ -99,15 +99,12 @@ function slideToRight() {
   imageContainer.style.transition = 'transform 10s linear';
   imageContainer.style.transform = `translateX(${currentPosition}px)`;
 
-  // Reset position to the beginning when the first image is reached
   if (currentPosition > 0) {
     setTimeout(() => {
       currentPosition = -slideWidth * (slideImages.length - 1);
-      imageContainer.style.transition = 'none'; // Remove transition for instant reset
+      imageContainer.style.transition = 'none'; 
       imageContainer.style.transform = `translateX(${currentPosition}px)`;
-    }, 10000); // Wait for the animation to complete before resetting
+    }, 3000);
   }
 }
-
-// Start sliding automatically
-setInterval(slideToLeft, 10000); // Adjust timing as needed
+setInterval(slideToLeft, 3000);
