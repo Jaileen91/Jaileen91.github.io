@@ -1,3 +1,9 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
 a {
   color: #444444;
   text-decoration: none;
