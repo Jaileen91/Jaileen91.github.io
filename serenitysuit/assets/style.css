@@ -288,10 +288,17 @@
 }
 
 .sectionroom2 {
-  width: auto;
   display: flex;
   justify-content: center;
 }
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
 .standard {
   width: 500px;
   margin-left: 100px;
@@ -317,6 +324,13 @@
   align-items: center;
   width: 250px;
   height: 250px;
+}
+.stan-room2{
+  display:inline-block;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
 }
 .exec-room{
   display:inline-block;
@@ -606,8 +620,8 @@
     margin-top: 20px;
   }
   .image-container{
-    display: flex; /* Use flexbox */
-    overflow: hidden; /* Hide overflowing content */
+    display: flex; 
+    overflow: hidden; 
   }
     
   .image-container img {
