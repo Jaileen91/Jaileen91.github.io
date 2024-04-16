@@ -48,7 +48,7 @@
     background-position: center;
     background-size: cover;
     width: auto;
-    height: 500px;
+    height: 800px;
   
   } 
   .section2 {
@@ -162,8 +162,6 @@
   }
   .table1 td {
     align-items: center;
-    width: 200px;
-    padding-left: 10px;
   }
   .table1 td p{
     font-family: "Lora";
@@ -238,7 +236,6 @@
 }
 .table2 td{
   border-color: black;
-  padding-left: 100px;
   /* border: 1px solid;
    */
 }
@@ -337,20 +334,17 @@
 
 .standard {
   width: 500px;
-  margin-left: 100px;
   margin-top: 70px;
 
 
 }
 .executive {
   width: 500px;
-  margin-left: 100px;
   margin-top: 70px;
 
 }
 .family {
   width: 500px;
-  margin-left: 100px;
   margin-top: 70px;
 }
 .stan-room{
@@ -889,7 +883,7 @@ main ,section{
 
 @media only screen and (max-width: 600px) {
   /* Adjust styles for smaller screens */
-  header,main, section {
+  header, main, section {
 width: 100%;
 align-items: center;
 align-content: center;
