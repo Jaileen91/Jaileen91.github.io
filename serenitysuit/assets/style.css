@@ -47,7 +47,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: auto;
+    width: 100%;
     height: 800px;
   
   } 
@@ -162,8 +162,6 @@
     width:auto; 
     border-collapse: collapse;
     border-spacing: 0;
-    max-width: 100%; 
-    overflow-x: auto; 
   }
   .table1 td {
     align-items: center;
@@ -177,13 +175,8 @@
     font-weight: bold;
     
   }
-  @media screen and (max-width: 600px) {
-    .covertd {
-        width: calc(100% - 10px);
-    }
-}
   .covertd{
-    width: calc(100% - 20px);
+    width: auto;
     margin-top: 0px;
     display: flex;
     justify-content: center;
@@ -811,7 +804,6 @@
   }
   section {
     width: 100%;
-    padding: 20px;
     margin-bottom: 10px;
 }
 #section-title{

@@ -6,6 +6,7 @@ body {
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
   font-family: Arial, sans-serif; /* Optional: Sets the font for all text */
+  width: 100%;
 }
 a {
   color: #444444;
@@ -24,16 +25,6 @@ h4,
 h5,
 h6 {
   font-family: "Raleway", sans-serif;
-}
-
-#main {
-  margin-top: 50px;
-}
-
-@media (max-width: 992px) {
-  #main {
-    margin-top: 30px;
-  }
 }
 
 .back-to-top {
