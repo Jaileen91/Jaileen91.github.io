@@ -899,7 +899,7 @@ main {
 
 @media (max-width: 600px) {
   header, main {
-      width: 75%; 
+      width: 100%; 
       text-align: center;
       box-sizing: border-box;
       align-items: center;
