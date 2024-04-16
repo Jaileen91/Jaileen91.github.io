@@ -1,5 +1,4 @@
 html, body {
-  height: 100%; /* Ensure the full height of the viewport is used */
   margin: 0;
   padding: 0;
   display: flex; /* Use flex to easily center the main tag */
