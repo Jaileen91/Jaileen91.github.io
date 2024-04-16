@@ -159,9 +159,15 @@
     justify-content: center;
     align-items: center;
     border: 3px white dashed; 
+    width:auto; 
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 100%; 
+    overflow-x: auto; 
   }
   .table1 td {
     align-items: center;
+    padding: 8px;
   }
   .table1 td p{
     font-family: "Lora";
@@ -171,25 +177,23 @@
     font-weight: bold;
     
   }
+  @media screen and (max-width: 600px) {
+    .covertd {
+        width: calc(100% - 10px);
+    }
+}
   .covertd{
+    width: calc(100% - 20px);
     margin-top: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-
-
   }
   .rqstbtn{
     border: none;
     height: 70px;
     font-family: "Lora";
-    margin-left: 20px;
   }
-  /* .tdbtn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
   .service{
     margin-top: 20px;
     width: auto;
