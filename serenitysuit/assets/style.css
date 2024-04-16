@@ -312,6 +312,8 @@
 .sectionroom2 {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 .align-left {
   text-align: left;
@@ -883,12 +885,17 @@
   background-color: #34b7a7;
 }
 
-header, main {
+header{
   width: 100%; /* Full width of the container */
   text-align: center; /* Center text inside the header and main */
-  padding: 20px; /* Adds padding inside header and main */
   box-sizing: border-box; /* Padding and border included in width/height */
 }
+main {
+  width: 75%; /* Full width of the container */
+  text-align: center; /* Center text inside the header and main */
+  box-sizing: border-box; /* Padding and border included in width/height */
+}
+
 
 @media (max-width: 600px) {
   header, main , #containerDiv{
