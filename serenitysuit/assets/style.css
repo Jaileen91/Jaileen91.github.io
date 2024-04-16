@@ -633,6 +633,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: auto;
 }
 
  #footer {
@@ -654,6 +655,7 @@
     width: 350px;
     margin-right: 10px;
     margin-top: 10px;
+    object-fit: contain;
   }
   .image-container{
     display: flex; 
@@ -887,7 +889,7 @@ main ,section{
 
 @media only screen and (max-width: 600px) {
   /* Adjust styles for smaller screens */
-  main, section {
+  header,main, section {
 width: 100%;
 align-items: center;
 align-content: center;
