@@ -1,10 +1,12 @@
 html, body {
-  margin: 0;
-  padding: 0;
-  display: flex; /* Use flex to easily center the main tag */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  font-family: Arial, sans-serif; /* Optional: sets the font for all text */
+  display: flex;
+  flex-direction: column; /* Stack children elements vertically */
+  justify-content: center; /* Center children vertically */
+  align-items: center; /* Center children horizontally */
+  min-height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-family: Arial, sans-serif; /* Optional: Sets the font for all text */
 }
 a {
   color: #444444;
@@ -442,6 +444,3 @@ h6 {
     line-height: 24px;
   }
 }
-
-
-
