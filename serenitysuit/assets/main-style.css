@@ -1,9 +1,8 @@
-html, body {
+body {
   display: flex;
   flex-direction: column; /* Stack children elements vertically */
   justify-content: center; /* Center children vertically */
   align-items: center; /* Center children horizontally */
-  min-height: 100vh; /* Full viewport height */
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
   font-family: Arial, sans-serif; /* Optional: Sets the font for all text */
@@ -246,7 +245,7 @@ h6 {
 }
 
 .mobile-nav-toggle {
-  color: #222222;
+  color: #8dd3e8;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -255,7 +254,7 @@ h6 {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: #fff;
+  color:#8dd3e8;
 }
 
 @media (max-width: 991px) {

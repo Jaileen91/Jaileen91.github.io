@@ -287,7 +287,7 @@
   border-color: black;
   /* border: 1px solid; */
 }
-.table5{
+.table{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -297,7 +297,7 @@
 
 .navbar-logo{
   width: 100px;
-  height: 55px;
+  height: 45px;
   margin-left: 0%;
 }
 
@@ -812,6 +812,9 @@
     padding: 20px;
     margin-bottom: 10px;
 }
+#section-title{
+justify-content: center;
+}
 .testimonials .testimonial-item h3 {
   font-size: 20px;
   font-weight: bold;
@@ -871,10 +874,11 @@
 header{
   width: 100%;
   text-align: center; 
-  box-sizing: border-box; 
+  box-sizing: border-box;
+  height: 55px; 
 }
-main {
-  width: 75%; 
+main ,section{
+  width:100%; 
   text-align: center; 
   box-sizing: border-box;
 }
