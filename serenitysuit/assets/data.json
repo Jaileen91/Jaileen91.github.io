@@ -2,8 +2,18 @@
     "clients": [
       {
         "date": "2024-04-12",
-        "room": "101",
+        "room": "Standard",
         "phoneNumber": "93432432432"
+      },  
+      {
+        "date": "2024-05-12",
+        "room": "Executive",
+        "phoneNumber": "3243243243"
+      },
+      {
+        "date": "2024-05-12",
+        "room": "Family",
+        "phoneNumber": "08923748932"
       }
     ]
   }

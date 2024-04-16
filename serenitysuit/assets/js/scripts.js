@@ -1,3 +1,4 @@
+//  room options
   fetch('assets/room.json')
   .then(response => {
     if (!response.ok) {
@@ -19,7 +20,7 @@
     console.error('Error fetching JSON:', error);
   });
 
-
+// request quote
   document.addEventListener('DOMContentLoaded', function() {
     function fetchData() {
       return fetch('assets/data.json')
@@ -74,6 +75,7 @@
     });
   });
 
+  //slide image
 const slideImages = document.querySelectorAll('.slide-image');
 const imageContainer = document.querySelector('.image-container');
 
@@ -109,11 +111,9 @@ function slideToRight() {
 }
 setInterval(slideToLeft, 2000);
 
-
+//booking form
 document.getElementById("myForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // prevent the form from submitting normally
-
-  // Get form data
+  event.preventDefault(); 
   var formData = {
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
@@ -123,8 +123,6 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
 
   const displayVal = JSON.stringify(formData);
   console.log(displayVal);
-
-  // Save form data to localStorage
   localStorage.setItem("formData", JSON.stringify(formData));
 
   alert("Form data saved successfully!");
