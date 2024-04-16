@@ -898,8 +898,12 @@ main {
 
 
 @media (max-width: 600px) {
-  header, main , #containerDiv{
-      width: 100%; /* Adjust width for mobile devices */
+  header, main {
+      width: 75%; 
+      text-align: center;
+      box-sizing: border-box;
+      align-items: center;
+      justify-content: center;
   }
 }
 

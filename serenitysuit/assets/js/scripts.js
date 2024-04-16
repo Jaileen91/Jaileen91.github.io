@@ -104,7 +104,28 @@ function slideToRight() {
       currentPosition = -slideWidth * (slideImages.length - 1);
       imageContainer.style.transition = 'none'; 
       imageContainer.style.transform = `translateX(${currentPosition}px)`;
-    }, 3000);
+    }, 2000);
   }
 }
-setInterval(slideToLeft, 3000);
+setInterval(slideToLeft, 2000);
+
+
+document.getElementById("myForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // prevent the form from submitting normally
+
+  // Get form data
+  var formData = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+    contact:document.getElementById("contact").value
+  };
+
+  const displayVal = JSON.stringify(formData);
+  console.log(displayVal);
+
+  // Save form data to localStorage
+  localStorage.setItem("formData", JSON.stringify(formData));
+
+  alert("Form data saved successfully!");
+});
