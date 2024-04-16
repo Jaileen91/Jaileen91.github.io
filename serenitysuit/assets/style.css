@@ -48,7 +48,7 @@
     background-position: center;
     background-size: cover;
     width: auto;
-    height: 800px;
+    height: 500px;
   
   } 
   .section2 {
@@ -71,11 +71,15 @@
     justify-content: center;
   }
   .inspireDiv{
-    justify-content:center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+    text-align: center; 
+    width: 100%; 
   }   
   .inspireDay{
+    max-width: 100%;
     font-family: "Lora";
     font-size: 85px;
     color: white;
@@ -84,6 +88,15 @@
     align-items: center;
     padding-top: 200px;
   }
+
+  @media (max-width: 600px) {
+    .inspireDiv {
+        padding: 10px; 
+    }
+    .inspireDay {
+        width: 90%; 
+    }
+}
   .message{
     font-family: 'Courier New', Courier, monospace;
     font-size: 25px;
