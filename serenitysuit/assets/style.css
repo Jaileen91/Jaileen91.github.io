@@ -878,11 +878,12 @@ main ,section{
 }
 
 @media only screen and (max-width: 600px) {
-  /* Adjust styles for smaller screens */
-  header, main, section {
+  header, main, section{
+display:block;
 width: 100%;
 align-items: center;
 align-content: center;
+justify-content: center;
   }
 }
   
