@@ -88,15 +88,6 @@
     align-items: center;
     padding-top: 200px;
   }
-
-  @media (max-width: 600px) {
-    .inspireDiv {
-        padding: 10px; 
-    }
-    .inspireDay {
-        width: 90%; 
-    }
-}
   .message{
     font-family: 'Courier New', Courier, monospace;
     font-size: 25px;
@@ -281,6 +272,29 @@
   width: 300px;
   height: 270px;
 }
+
+.table3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: black;
+  /* border: 1px solid; */
+}
+.table4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: black;
+  /* border: 1px solid; */
+}
+.table5{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: black;
+  /* border: 1px solid; */
+}
+
 .navbar-logo{
   width: 100px;
   height: 55px;
@@ -301,7 +315,6 @@
   
 } 
 .serviceroom1{
-  margin-top: 60px;
   width: auto;
   display: flex;
   justify-content: center;
@@ -313,7 +326,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 .align-left {
   text-align: left;
@@ -658,7 +670,7 @@
     margin: 0; /* Remove margin */
     transition: transform 10s linear; /* Transition effect for smooth sliding */
   }
-  
+
   .contact .info {
     width: 100%;
     background: white;
@@ -800,27 +812,6 @@
     padding: 20px;
     margin-bottom: 10px;
 }
-
-@media (max-width: 600px) {
-    section {
-        text-align: center;
-        padding: 10px;
-    }
-}
-
-@media (min-width: 601px) and (max-width: 900px) {
-    section {
-        text-align: left;
-        padding: 15px;
-    }
-}
-
-@media (min-width: 901px) {
-    section {
-        text-align: left;
-        padding: 20px;
-    }
-}
 .testimonials .testimonial-item h3 {
   font-size: 20px;
   font-weight: bold;
@@ -860,12 +851,6 @@
   margin: 0 auto 15px auto;
 }
 
-@media (min-width: 992px) {
-  .testimonials .testimonial-item p {
-    width: 80%;
-  }
-}
-
 .testimonials .swiper-pagination {
   margin-top: 20px;
   position: relative;
@@ -894,15 +879,12 @@ main {
   box-sizing: border-box;
 }
 
-
-@media (max-width: 600px) {
-  header, main {
-      width: 100%; 
-      text-align: center;
-      box-sizing: border-box;
-      align-items: center;
-      justify-content: center;
+@media only screen and (max-width: 600px) {
+  /* Adjust styles for smaller screens */
+  main, section {
+width: 100%;
+align-items: center;
+align-content: center;
   }
 }
-
   
