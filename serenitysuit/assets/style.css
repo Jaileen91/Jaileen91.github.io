@@ -621,7 +621,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: auto;
 }
 
  #footer {
@@ -634,14 +633,13 @@
   .container {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap; 
   }
   
   .container img {
-    width: 45%;
-    margin-right: 20px;
-    margin-top: 20px;
+    width: 350px;
+    margin-right: 10px;
+    margin-top: 10px;
   }
   .image-container{
     display: flex; 
@@ -886,14 +884,14 @@
 }
 
 header{
-  width: 100%; /* Full width of the container */
-  text-align: center; /* Center text inside the header and main */
-  box-sizing: border-box; /* Padding and border included in width/height */
+  width: 100%;
+  text-align: center; 
+  box-sizing: border-box; 
 }
 main {
-  width: 75%; /* Full width of the container */
-  text-align: center; /* Center text inside the header and main */
-  box-sizing: border-box; /* Padding and border included in width/height */
+  width: 75%; 
+  text-align: center; 
+  box-sizing: border-box;
 }
 
 
